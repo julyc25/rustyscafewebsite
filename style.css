@@ -17,6 +17,11 @@
   line-height: 1;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0%;
 }
@@ -270,6 +275,7 @@ a {
   margin: 1rem;
   width: 35vw;
   gap: 1rem;
+  min-width: 380px;
 }
 
 .feedback-form label {
@@ -318,25 +324,28 @@ button:hover {
 
 
 /* Menu */
-.drink-menu{
+
+.drink-menu, .pastry-menu{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #5a2c24;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
-.drink-menu>h2{
+.drink-menu>h2, .pastry-menu > h2{
   margin: 3rem 0 1rem 0;
   letter-spacing: 2rem;
   border-radius: 10px;
   color: #5a2c24;
   background-color:#c4af92;
-  padding: 0 12.7vw;
-
+  width: 52%;
+  min-width: 500px;
 }
 
-.columns h2, .drink-menu h3, .drink-menu p {
+
+.columns h2, .drink-menu h3, .drink-menu p, .pastry-menu h3 {
   color: white;
   font-family: "Katibeh", serif;
   font-weight: normal;
@@ -351,9 +360,10 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 0 20vw;
   box-sizing: border-box;
+  gap: 4%;
+  width: 50vw;
+  min-width: 400px;
 }
 
 
@@ -361,12 +371,15 @@ button:hover {
   box-sizing: border-box;
   width: 22vw;
   border-radius: 10px;
+  width: 100%;
 }
 
 .espresso-col {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  min-width: 180px;
+  width: 46%;
 }
 
 .espresso-col p {
@@ -389,11 +402,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 0vw;
+  min-width: 130px;
+  max-width: 150px;
+  width: 25%;
 }
 
-.col-2 img {
-  width: 12vw;
-}
 
 .col-2 p {
   font-size: 1rem;
@@ -421,7 +434,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   gap: 1vw;
-  width: 12vw;
+  width: 25%;
+  min-width: 100px;
 }
 
 .col-3 p {
@@ -464,7 +478,7 @@ button:hover {
   gap: 0.5vw;
 }
 
-.customize-col p {
+.customize-col p, .pastry-menu p {
     font-size: 1rem;
 }
 
@@ -480,6 +494,83 @@ button:hover {
   color: white;
 }
 
+.pastry-menu h3 {
+  line-height: 0.8;
+}
+
+.pastry-big {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.pastry-big>div{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #c4af92;
+  border-radius: 10px;
+  margin: 0.8rem 0;
+}
+
+.pastry-big>div>p{
+  padding:0.5rem;
+}
+
+.pastry-small {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5%;
+}
+
+
+.pastry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5%;
+}
+
+.pastry h3 {
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); /* optional, for reading direction */
+}
+
+.pastry img {
+  width: 45%;
+  height: auto;
+  align-self: center;
+}
+
+.pastry-small .text {
+   background-color: #c4af92;
+  border-radius: 10px;
+  padding: 0.5vw;
+  text-align: center;
+  width: 40%;
+  min-width: 80px;
+}
+
+.pastry-small .text h3{
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+  font-size: 1.6rem;
+  padding: 1%;
+}
+
+.pastry-small .text p {
+  font-size: 0.9rem;
+}
+
+
 /* Location */
 .location {
   display: flex;
@@ -487,13 +578,15 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin: 5rem 0 0 0;
-  gap: 5vw;
+  gap: 5%;
+  flex-wrap: wrap;
 }
 
 .location div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1%;
 }
 
 .location h2 {
@@ -505,5 +598,3 @@ button:hover {
   height: 40vw;
   border-radius: 10px;
 }
-
-
