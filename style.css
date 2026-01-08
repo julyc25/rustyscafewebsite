@@ -494,6 +494,11 @@ button:hover {
   color: white;
 }
 
+
+.pastry-menu {
+  padding: 0 0 4% 0;
+}
+
 .pastry-menu h3 {
   line-height: 0.8;
 }
