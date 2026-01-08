@@ -1,0 +1,509 @@
+/* DEFAULT */
+
+@font-face {
+  /* custom Katibeh for vertically centered font */
+  font-family: Katibeh;
+  src: url(font/Katibeh-Regular.woff);
+}
+@font-face {
+  /* custom jua  for vertically centered font */
+  font-family: Jua;
+  src: url(font/Jua-Regular.woff);
+}
+
+*
+{
+  font-family: "Katibeh", serif;
+  line-height: 1;
+}
+
+body {
+  margin: 0%;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size:3rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p{
+  font-family: "Jua", serif;
+  font-size: 1.3rem;
+  margin: 0;
+  color:#5a2c24;
+}
+
+.button, button {
+  text-align: center;
+  align-content: center;
+  width: 9vw;
+  min-width: 100px;
+  height: 3.3vw;
+  min-height: 30px;
+  border-radius: 8px;
+  background-color: #bf9e7b;
+  margin: 1.1vw;
+  font-size: 1rem;
+  font-family: "Jua", serif;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  background-color: #c4af92;
+  padding: 0.5vw 2vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+  color: #5a2c24;
+  text-decoration: none;
+}
+
+.earthling {
+    font-family: "Katibeh", serif;
+    font-size:1.8rem;
+}
+.navlinks > a {
+    font-family: "Jua", serif;
+    font-size:1rem;
+}
+.navlinks > a:hover {
+    color: #5a2c24;
+}
+
+/* LANDING */
+
+.landing {
+  background-image: url("images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 3rem 0;
+}
+
+.landing h1 {
+  margin: 3rem 0 0 0;
+  font-size: 5rem;
+  color: #5a2c24;
+}
+
+.landing h2 {
+  font-size: 3rem;
+  color: #bf9e7b;
+  margin: 0;
+}
+
+.landing img {
+  width: 33vw;
+  min-width: 300px;
+}
+
+/* ADs*/
+
+.drink-ad {
+    margin: 4rem 0 0 0;
+}
+
+.milk-ad{
+  margin: 0 0 4rem 0;
+}
+
+.about-team {
+  margin: 4rem 0;
+}
+.drink-ad, .pastry-ad, .milk-ad{
+  padding: 2vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7vw;
+}
+
+.drink-ad div , .pastry-ad div, .milk-ad div{
+  width:35vw;
+  min-width: 200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drink-ad h2, .pastry-ad h2, .milk-ad h2{
+  color:#5a2c24;
+}
+
+.drink-ad img , .pastry-ad img {
+  width: 30vw;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+ .milk-ad img {
+  width: 20vw;
+  height:20vw;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 10px;
+ }
+
+/* Visit Us + Feedback form */
+
+.visit-us, .feedback-form {
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5a2c24;
+  padding: 0 5rem;
+}
+
+.visit-us > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.visit-us h2, .visit-us p, .feedback-form h2, .feedback-form p {
+  color:white;
+}
+
+
+.visit-us h2, .feedback-form h2 {
+  color:white;
+  line-height: 0.8;
+}
+
+/* About Us */
+.about-us{
+  padding: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5a2c24;
+  margin: 0 0 2rem 0;
+}
+
+.about-us h1{
+  color:white;
+}
+
+.about-rustys, .about-team {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7vw;
+}
+
+.about-team {
+  margin: 2rem 0 4rem 0;
+}
+
+.about-rustys div, .about-team div{
+  width:35vw;
+  min-width: 200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-rustys h2, .about-team h2{
+  color:#5a2c24;
+}
+
+.about-rustys img, .about-team img {
+  width: 25vw;
+  min-width: 200px;
+}
+
+
+/* Feedback form */
+
+.feedback-form {
+  padding: 1rem;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  background-color: #bf9e7b;
+  padding: 1.3rem 1rem 1.5rem 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  width: 35vw;
+  gap: 1rem;
+}
+
+.feedback-form label {
+  color: #5a2c24;
+  font-family: "Jua", serif;
+}
+
+.title-name .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 1rem;
+}
+
+
+.form-group > input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.feedback-form textarea, .feedback-form input {
+  resize:none;
+  font-size: 1rem;
+  font-family: serif;
+  padding: 0.3rem;
+}
+
+.feedback-form > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+/* Menu */
+.drink-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5a2c24;
+  padding: 1rem;
+}
+
+.drink-menu>h2{
+  margin: 3rem 0 1rem 0;
+  letter-spacing: 2rem;
+  border-radius: 10px;
+  color: #5a2c24;
+  background-color:#c4af92;
+  padding: 0 12.7vw;
+
+}
+
+.columns h2, .drink-menu h3, .drink-menu p {
+  color: white;
+  font-family: "Katibeh", serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+.drink-menu p {
+  font-size: 1.5rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 20vw;
+  box-sizing: border-box;
+}
+
+
+.columns img {
+  box-sizing: border-box;
+  width: 22vw;
+  border-radius: 10px;
+}
+
+.espresso-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.espresso-col p {
+  line-height: 1.5rem;
+}
+
+.espresso-col > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 0 0 0;
+}
+
+.espresso-col > div  > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0vw;
+}
+
+.col-2 img {
+  width: 12vw;
+}
+
+.col-2 p {
+  font-size: 1rem;
+}
+
+.non-espresso-col, .seasonal-col{
+  display: flex;
+  flex-direction: column;
+}
+.non-espresso-col > div , .seasonal-col > div{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5vw 0;
+}
+
+.non-espresso-col > div > div, .seasonal-col > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+  width: 12vw;
+}
+
+.col-3 p {
+  font-family: "Jua", serif;
+  color: #5a2c24;
+}
+
+.col-3 h3 {
+  color: #5a2c24;
+}
+
+.size-col {
+  background-color: #c4af92;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5vw;
+  gap: 1vw;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0.6rem 0 0 0;
+}
+
+.size-col h3 {
+  font-size: 1.5rem;
+}
+
+.size-col p {
+  font-size: 0.7rem;
+}
+
+.customize-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4af92;
+  padding: 1vw;
+  border-radius: 10px;
+  gap: 0.5vw;
+}
+
+.customize-col p {
+    font-size: 1rem;
+}
+
+.customize-col h3 {
+  font-size: 1.6rem;
+}
+.customize-col > h3  {
+  font-weight: 900;
+  margin:0;
+}
+
+.customize-col > div > h3 {
+  color: white;
+}
+
+/* Location */
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 0 0;
+  gap: 5vw;
+}
+
+.location div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location h2 {
+  color: #5a2c24;
+}
+
+.location .map {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 10px;
+}
+
+
